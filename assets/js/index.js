@@ -32,8 +32,8 @@ function addScore(score, scoreNum){
         scoreNum += 1;
         score.innerHTML = scoreNum ;
     }else {
-        userWinner.innerHTML = "Draf";
-        compWinner.innerHTML = "Draf";
+        userWinner.innerHTML = "Draw";
+        compWinner.innerHTML = "Draw";
         userWinner.style.color = 'black';
         compWinner.style.color = 'black';
     }
@@ -58,8 +58,8 @@ function play() {
         addScore(userScore, userScoreNum);
     }
     else {
-        userWinner.innerHTML = "Draf";
-        compWinner.innerHTML = "Draf";
+        userWinner.innerHTML = "Draw";
+        compWinner.innerHTML = "Draw";
         userWinner.style.color = 'black';
         compWinner.style.color = 'black';
     }
