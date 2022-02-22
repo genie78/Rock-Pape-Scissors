@@ -118,10 +118,10 @@ if (window.screen.availWidth <= 768){
     document.getElementById("rock-button").onclick = chooseRock;
     document.getElementById("paper-button").onclick = choosePaper;
     document.getElementById("scissors-button").onclick = chooseScissors;
-        
+    let userChoiceDivImage = document.querySelector(".user-choice-div-img");
+    userChoiceDivImage.remove();
 }else if (window.screen.availWidth > 769){
     let divChild = document.querySelector(".press-button-div");
     divChild.remove();
-
 }
 
