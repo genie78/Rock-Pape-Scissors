@@ -1,0 +1,26 @@
+html, body {
+    background-color: #6c757d;
+    padding-top: 5px;
+}
+
+.jumbotron-custom {
+    background-color: #f6f6f6;
+}
+
+#comp-choice-img {
+    transform: scaleX(-1);
+}
+
+div.press-button-div {
+    visibility: hidden;
+}
+
+@media screen and (max-width:768px) {
+    div.press-key-div {
+        visibility: hidden;
+    }
+
+    div.press-button-div {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | RPS</title>
+    <meta name="description" content="This is Rock paper scissors game made by me, enjoy it :)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/external-content.duckduckgo.com.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <div class="jumbotron jumbotron-fluid jumbotron-custom rounded">
+                    <div class="container">
+                        <h1 class="display-4 text-center">Rock Paper Scissors</h1>
+                        <div class="press-key-div">
+                            <p class="lead text-center">Please select one of the 'R S P' (press) buttons to play</p>
+                        </div>
+                        <div on class="press-button-div">
+                            <h2 class="text-center display-5">Please select one of them:</h2>
+                            <div class="d-flex flex-row justify-content-around" >
+                                <button id="rock-button" onclick="chooseRock()" type="button" class="btn btn-outline-success" >
+                                    <img class="w-100" src="./assets/img/rock.png" alt="rock">
+                                </button>
+                                <button id="paper-button" onclick="choosePaper()" type="button" class="btn btn-outline-success" >
+                                    <img class="w-100" src="./assets/img/paper.png" alt="rock">
+                                </button>
+                                <button id="scissors-button" onclick="chooseScissors()" type="button" class="btn btn-outline-success" >
+                                    <img class="w-100" src="./assets/img/scissors.png" alt="rock">
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="jumbotron jumbotron-fluid jumbotron-custom rounded">
+                    <div class="container">
+                        <h2 id="user-winner" class="text-center">Draf</h2>
+                        <h2 class="display-6 text-center" >User</h2>
+                        <h3 class="lead text-center">Score: <span id="user-score">0</span></h3>
+                    </div>
+                </div>
+
+                <div class="jumbotron jumbotron-fluid jumbotron-custom rounded">
+                    <div class="container">
+                        <img class="mx-auto d-block w-50" id="user-choice-img" src="./assets/img/paper.png" alt="test-img">
+                        <h2 class="display-6 text-center" id="user-choice">Paper</h2>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-2">
+                <h2 class="display-2 text-center text-white">VS</h2>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="jumbotron jumbotron-fluid jumbotron-custom rounded">
+                    <div class="container">
+                        <h2 id="comp-winner" class="text-center">Draf</h2>
+                        <h2 class="display-6 text-center" >Computer</h2>
+                        <h3 class="lead text-center">Score: <span id="comp-score">0</span></h3>
+                    </div>
+                </div>
+
+                <div class="jumbotron jumbotron-fluid jumbotron-custom rounded">
+                    <div class="container">
+                        <img class="mx-auto d-block w-50 " id="comp-choice-img" src="./assets/img/paper.png" alt="test-img">
+                        <h2 class="display-6 text-center" id="comp-choice">Paper</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
